@@ -140,6 +140,7 @@ a.active,a:hover{
   color: White;
   font-weight: bolder;
   font-family: Verdana;
+  font-size: wrap;
 }
 @keyframes fade-in
 {
