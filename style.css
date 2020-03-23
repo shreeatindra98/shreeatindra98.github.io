@@ -1,0 +1,27 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+.img1{
+	height:auto;
+	max-height: 100%;
+	max-width: 100%;
+}
+.container{width:100%;
+	height:auto;
+	display:flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-flow:wrap;
+}
+.box1{width:50%;}
+@media screen and (max-width:600px)
+{
+	.box1{
+		width:100%;
+	}
+	.img1{
+		height:20em;
+	}
+}
