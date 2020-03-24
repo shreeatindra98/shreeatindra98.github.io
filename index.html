@@ -18,7 +18,8 @@ background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, F
         <i class="fas fa-bars"></i>
       </label>
 		<label class="logo">HAREEN</label>
-		<ul>
+		<ul style="opacity:0;animation: right-in 0.5s ease-in forwards;
+	animation-delay: 0.5s;">
 			<li><a class="active" href="#">Home</a></li>
 			<li><a href="#">Home</a></li>
 			<li><a href="#">Home</a></li>
@@ -31,37 +32,72 @@ background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, F
 
 	
 	<div class="container">
-		<div class="box1" style="text-align:center;">
-	<img src="img1.png" alt="img1" class="img1">
+		<div class="box1" style="text-align: center;animation: right-in 0.5s ease-in forwards;
+	animation-delay: 0s;">
+	<img name="slide" alt="img1" class="img1">
 		</div>
 		<div class="box1 flex-container">
-				<div style="animation: right-in 0.5s ease-in forwards;
-	animation-delay: 0s;;background: #12c2e9;  /* fallback for old browsers */
+				<div style="opacity:0;animation: right-in 0.5s ease-in forwards;
+	animation-delay: 1.5s;background: #12c2e9;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-">HAREEN ACCOMMODATION</div>
+"><div class="flip-card1">
+  <div class="flip-card-inner1">
+    <div class="flip-card-front1">
+    	<h1>HAREEN ACCOMMODATION</h1><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultrices risus ex, vitae auctor augue egestas id. Quisque diam metus, iaculis vel tincidunt quis, pharetra eget quam. Vivamus vitae felis auctor nunc semper pretium. Class aptent taciti sociosqu ad litora torquen</p></div><div class="flip-card-back1">
+      <img src="img0.png" height="120px" width="120px"><br/><button style="background-color: blue;color:white;height:50px;width:100px;border-radius: 10px">SHOW ME</button>
+    </div></div>
+  </div>
+</div>
 				<div style="opacity: 0;animation: right-in 0.5s ease-in forwards;
-	animation-delay: 1s;;background: #12c2e9;  /* fallback for old browsers */
+	animation-delay: 2.5s;;background: #12c2e9;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-">YAADGAAR SAFAR</div>
+"><h1>YAADGAAR SAFAR</h1></div>
 <div style="opacity:0;animation: right-in 0.5s ease-in forwards;
-	animation-delay: 2s;;background: #12c2e9;  /* fallback for old browsers */
+	animation-delay: 3.5s;background: #12c2e9;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-">HAREEN PRINTING</div>
+"><h1>HAREEN PRINTING</h1></div>
 				
 			
 		</div>
 	</div>		
 	</section>	
-		<section class="s3">
-			<h1>HAREEN PRINTING<br>j<br>j<br>j<br>j<br>j<br>j<br>j<br>j<br>j<br>j<br>j<br>j<br>j<br>j<br>j<br>j<br>j<br>j<br>j<br>j<br>j<br>j<br>j<br>j<br>j<br>j<br>j</h1>
-		</section>
-	</div>		
-	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+		
+	</div>
+
+
+	<div style="background: #c0392b;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #8e44ad, #c0392b);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #8e44ad, #c0392b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+">
+		<h1>hi</h1><br/><h1>hi</h1><br/><h1>hi</h1><br/>
+	</div>	
+	<script>
+		var i=0;
+		var images=[];
+		var time=3000;
+		images[2]='img1.png';
+		images[1]='img123.png';
+		images[0]='imgfinal.png';
+		function changeImg(){
+			document.slide.src=images[i];
+			if(i<2){
+				i++;
+			}
+			else{
+				i=0;
+			}
+			setTimeout("changeImg()",time);
+
+		}
+window.onload=changeImg;
+	</script>
+	<script src="https://kit.fontawesome.com/a076d05399.js">
+	</script>
 </body>
 </html>
