@@ -135,10 +135,10 @@ a.active,a:hover{
   flex-direction: column;
 }
 
-.flex-container > div {height:33%;
+.flex-container > div {height:30%;
   background-color: #f1f1f1;
   width: 100%;
-  margin: 0px;padding:20px 20px 20px 20px;
+  margin: 2px;padding:20px 20px 20px 20px;
   text-align: center;
   border-radius: 10px;
   color: White;
