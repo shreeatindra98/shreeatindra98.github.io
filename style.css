@@ -232,6 +232,7 @@ a.active,a:hover{
 /* Style the back side */
 .flip-card-back1 {
   background-color: #2980b9;
+padding: 2px 2px 2px 2px;
   color: white;
   transform: rotateY(180deg);
 }
