@@ -48,7 +48,7 @@ background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+
 		height:15em;
 		
 	}
-.flex-container > div {height:33%;
+.flex-container > div {height:100%;
   background-color: #f1f1f1;
   width: 100%;
   margin: 1px;
