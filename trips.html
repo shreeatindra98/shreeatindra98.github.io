@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA_Compatible" content="ie=edge">
+	<link rel="stylesheet" href="./style.css">
+
+	<title>Fullpage</title>
+</head>
+<body style="background: #076585;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #fff, #076585);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #fff, #076585); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+">
+	<nav style="position: fixed;animation:ease-in;">
+		<input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+		<label class="logo">HAREEN</label>
+		<ul style="opacity:0;animation: right-in 0.5s ease-in forwards;
+	animation-delay: 0.5s;">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="findpg.html">FIND PG</a></li>
+			<li><a class="active" href="trips.html">UPCOMING TRIPS</a></li>
+			<li><a href="printing.html">PRINTING</a></li>
+			<li><a href="#">ABOUT US</a></li>
+			<li><a href="#">CONTACT US</a></li>
+		</ul>
+	</nav><br/><br/><br/><br/>
+	<h1>COMING SOON</h1>
+	
+
+
+
+<script>
+		var i=0;
+		var images=[];
+		var time=3000;
+		images[2]='img1.png';
+		images[1]='img123.png';
+		images[0]='imgfinal.png';
+		function changeImg(){
+			document.slide.src=images[i];
+			if(i<2){
+				i++;
+			}
+			else{
+				i=0;
+			}
+			setTimeout("changeImg()",time);
+
+		}
+window.onload=changeImg;
+	</script>
+	<script src="https://kit.fontawesome.com/669cd7a373.js">
+	</script>
+</body>
+</html>
